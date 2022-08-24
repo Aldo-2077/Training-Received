@@ -31,11 +31,11 @@ This repository encompasses training that I have received from:
 # SANS SEC504 Hacker Tools, Techniques, and Incident Handling (GCIH)
 - ## Incident Response and Cyber Investigations
     **Overview**
+    
+    The first section of SEC504 focuses on how to develop and build an incident response process in your organization by applying the Dynamic Approach to Incident Response (DAIR) to effectively verify, scope, contain, assess, and remediate threats. We'll apply this process in-depth with hands-on labs and examples from real-world compromises.<br><br>
 
-        The first section of SEC504 focuses on how to develop and build an incident response process in your organization by applying the Dynamic Approach to Incident Response (DAIR) to effectively verify, scope, contain, assess, and remediate threats. We'll apply this process in-depth with hands-on labs and examples from real-world compromises.
-        
     **Hands-on Exercises**
-
+    
     - Live Windows examination
     - Network investigation
     - Memory investigation
