@@ -35,7 +35,7 @@ This repository encompasses training that I have received from:
     The first section of SEC504 focuses on how to develop and build an incident response process in your organization by applying the Dynamic Approach to Incident Response (DAIR) to effectively verify, scope, contain, assess, and remediate threats. We'll apply this process in-depth with hands-on labs and examples from real-world compromises.<br><br>
 
     **Hands-on Exercises**
-    
+
     - Live Windows examination
     - Network investigation
     - Memory investigation
@@ -116,8 +116,8 @@ This repository encompasses training that I have received from:
 
     ## Recon, Scanning, and Enumeration Attacks
     **Overview**
-
-        In this course section I learned about the techniques attackers use to conduct reconnaissance as a pre-attack step, including how they use open-source intelligence, network scanning, and target enumeration attacks to find the gaps in your network security. You'll use attacker techniques to assess the security of a target network, evaluating popular protocols and endpoints for Windows, Linux, and cloud targets. After delivering the attacks, you'll investigate the logging data and evidence that remains to recognize these attacks as they happen.
+    
+    In this course section I learned about the techniques attackers use to conduct reconnaissance as a pre-attack step, including how they use open-source intelligence, network scanning, and target enumeration attacks to find the gaps in your network security. You'll use attacker techniques to assess the security of a target network, evaluating popular protocols and endpoints for Windows, Linux, and cloud targets. After delivering the attacks, you'll investigate the logging data and evidence that remains to recognize these attacks as they happen.<br><br>
         
     **Hands-on Exercises**
 
@@ -194,8 +194,8 @@ This repository encompasses training that I have received from:
 
     ## Password and Access Attacks
     **Overview**
-
-    Password attacks are the most reliable mechanism for attackers to bypass defenses and gain access to your organization's assets. In this course section we investigated the complex attacks that exploit password and multi-factor authentication weaknesses using the access gained to access other network targets.
+    
+    Password attacks are the most reliable mechanism for attackers to bypass defenses and gain access to your organization's assets. In this course section we investigated the complex attacks that exploit password and multi-factor authentication weaknesses using the access gained to access other network targets.<br><br>
 
     
     **Hands-on Exercises**
