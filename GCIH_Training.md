@@ -1,4 +1,22 @@
 # SANS SEC504 Hacker Tools, Techniques, and Incident Handling (GCIH)
+
+## Topics
+- [Incident Response and Cyber Investigation](#incident-response-and-cyber-investigations)
+
+- [Recon, Scanning, and Enumeration Attacks](#recon-scanning-and-enumeration-attacks)
+ 
+- [Password and Access Attacks](#password-and-access-attacks)
+
+- [Public-Facing and Drive-By Attacks](#public-facing-and-drive-by-attacks)
+ 
+- [Evasive and Post-Exploitation Attacks](#evasive-and-post-exploitation-attacks)
+
+- [Capture the Flag Event](#capture-the-flag-event)
+
+---
+
+<br>
+
 - ## Incident Response and Cyber Investigations
     **Overview**
     
