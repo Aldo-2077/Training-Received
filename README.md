@@ -17,22 +17,22 @@ This repository encompasses training that I have received from:
 
 ### **SANS Technology Institute (2021-2022)**
 
-- [ Advanced Digital Forensics Incident
-Response (GCFA) ]()
+- Advanced Digital Forensics Incident
+Response (GCFA)
 
 - [ Hacker Tools, Techniques, and Incident Handling (GCIH) ]( GCIH_Training.md )
 
-- [ Security Essentials (GSEC) ]()
+- Security Essentials (GSEC)
 
-- [ Security Foundations (GFACT) ]()
+- Security Foundations (GFACT)
 
 <br>
 
 ### **ATT&CK Academy (2022)**
 
-- [ Foundations of Operationalizing MITRE ATT&CK ]()
+- Foundations of Operationalizing MITRE ATT&CK
 
-- [ Extending ATT&CK with ATT&CK Workbench ]()
+- Extending ATT&CK with ATT&CK Workbench
 
 <br>
 
@@ -43,21 +43,27 @@ Response (GCFA) ]()
 
 ### **Cisco Network Academy (2021)**
 
-- [ NDG Linux Unhatched ]()
+- NDG Linux Unhatched
 
-- [ Introduction to Packet Tracer ]()
+- Introduction to Packet Tracer
 
-- [ Introduction to IoT ]()
+- Introduction to IoT
 
 <br>
 
 ### **TryHackMe (2021-Present)**
 
-- [ Web Fundamentals ]()
+- Cyber Defense
 
-- [ Introduction to Cybersecurity ]()
+- Comptia Pentest+
 
-- [ Presecurity Learning ]()
+- Web Fundamentals
+
+- Complete Beginner
+
+- Presecurity Learning
+
+- Introduction to Cybersecurity
 
 <br>
 
