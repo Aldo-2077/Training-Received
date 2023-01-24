@@ -113,10 +113,70 @@ Finally, this section ended with a comprehensive discussion of Microsoft credent
 
 **Overview**
 
+Cyber defenders have a wide range of tools and techniques at their disposal to detect, hunt, and track malicious activity within a network. Each step taken by an attacker leaves behind a unique artifact, and understanding these footprints is crucial for both red and blue teams.
+
+Attacks tend to follow a predictable pattern, and by focusing on the immutable elements of this pattern, it becomes easier to identify malicious activity. For example, attackers will inevitably need to run code in order to achieve their objectives, and this can be detected through the use of application execution artifacts. Additionally, attackers will require one or more accounts to run this code, making account auditing a powerful means of identifying malicious activity. Furthermore, attackers will need a way to move throughout the network, so we look for artifacts left by the relatively small number of ways there are to accomplish internal lateral movement.
+
+In this section, we cover common attacker tactics and discuss the various data sources and forensic tools that can be used to identify malicious activity within an enterprise.
+
 **Hands-on Exercises**
 
+- Hunting and Detecting Evidence of Execution at Scale with Prefetch, Shimcache and Amcache
+- Discovering Credential abuse with Event Log Collection and Analysis
+- Tracking Lateral Movement with Event Log Analysis
+- Hunting Malicious use of WMI and PowerShell
 ### **Topics**
 
+**Stealing and Utilization of Legitimate Credentials**
+
+- Pass the Hash
+- Single Sign On (SSO) Dumping using Mimikatz
+- Token Stealing
+- Cached Credentials
+- LSA Secrets
+- Kerberos Attacks
+- NTDS.DIT theft
+
+**Advanced Evidence of Execution Detection**
+
+- Attacker Tactics, Techniques, and Procedures (TTPs) - Observed Via Process Execution
+- Prefetch Analysis
+- Application Compatibility Cache (ShimCache)
+- Amcache Registry Examination
+- Scaling ShimCache and Amcache Investigations
+
+**Lateral Movement Adversary Tactics, Techniques, and Procedures (TTPs)**
+
+- Compromising Credentials Techniques
+- Remote Desktop Services Misuse
+- Windows Admin Share Abuse
+- PsExec and Cobalt Strike Beacon PsExec Activity
+- Windows Remote Management Tool Techniques
+- PowerShell Remoting/WMIC Hacking
+- Cobalt Strike Lateral Movement and Credential Use
+- Vulnerability Exploitation
+
+**Log Analysis for Incident Responders and Hunters**
+
+- Profiling Account Usage and Logons
+- Tracking and Hunting Lateral Movement
+- Identifying Suspicious Services
+- Detecting Rogue Application Installation
+- Finding Malware Execution and Process Tracking
+- Capturing Command Lines and Scripts
+- Anti-Forensics and Event Log Clearing
+
+**Investigating WMI and PowerShell-Based Attacks**
+
+- WMI Overview
+- WMI Attacks Across the Kill Chain
+- Auditing the WMI Repository
+- WMI File System and Registry Residue
+- Command-Line Analysis and WMI Activity Logging
+- PowerShell Transcript and ScriptBlock Logging
+- Discovering Cobalt Strike beacon PowerShell Import Activity
+- Detecting PowerShell Injection from Cobalt Strike, Metasploit, and Empire
+- PowerShell Script Obfuscation
 ---
 
 ## Memory Forensics in Incident Response & Threat Hunting
