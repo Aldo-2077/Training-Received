@@ -17,10 +17,10 @@ This repository encompasses training that I have received from:
 
 ### **SANS Technology Institute (2021-2022)**
 
-- Advanced Digital Forensics Incident
-Response (GCFA)
+- [ Advanced Digital Forensics Incident
+Response (GCFA) ](./GCFA_Training.md)
 
-- [ Hacker Tools, Techniques, and Incident Handling (GCIH) ]( GCIH_Training.md )
+- [ Hacker Tools, Techniques, and Incident Handling (GCIH) ]( ./GCIH_Training.md )
 
 - Security Essentials (GSEC)
 
