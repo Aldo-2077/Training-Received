@@ -183,9 +183,89 @@ In this section, we cover common attacker tactics and discuss the various data s
 
 **Overview**
 
-**Hands-on Exercises**
+Memory forensics has become a crucial part of many advanced toolkits and essential for incident response and threat hunting teams. It can reveal evidence of worms, rootkits, PowerShell attacks, ransomware precursors, and advanced malware used by targeted attackers. 
 
+Memory analysis is no longer just for Windows internals experts and reverse engineers, thanks to new tools, techniques, and detection methods. These advancements make memory analysis accessible to all investigators, incident responders, and threat hunters. Understanding attack patterns in memory is a key skill for analysts using endpoint detection and response (EDR) products, making these tools even more effective. 
+
+This section explored some of the most powerful memory analysis capabilities and provided a solid foundation of advanced memory forensic skills to enhance investigations, regardless of the toolset used.
+
+**Hands-on Exercises**
+- Scaling remote endpoint incident response, hunting, and analysis using Velociraptor
+- Remote endpoint triage and memory examination using F-Response Enterprise
+- Creating local and remote triage evidentiary images with KAPE
+- Detect unknown live and dormant custom malware in memory across multiple systems in an enterprise environment
+- Examine Windows process trees to identify normal versus anomalies
+- Find advanced "beacon" malware over common ports used by targeted attackers to access command and control (C2) channels
+- Find residual attacker command-line activity through scanning strings in memory and by extracting command history buffers
+- Compare compromised system memory against a baseline system using Frequency of Least Occurrence stacking techniques
+- Identify advanced malware hiding techniques, including code injection and rootkits
+- Employ indicators of compromise to automate analysis
+- Analysis of memory from infected systems:
+    - Stuxnet
+    - TDL3/ TDSS
+    - CozyDuke APT29 RAT
+    - Rundll32 and Living Off the Land Executions
+    - Zeus/Zbot/Zloader
+    - Emotet
+    - SolarMarker
+    - Black Energy Rootkit
+    - WMI and PowerShell
+    - Cobalt Strike Beacons and Powerpick
+    - Cobalt Strike Sacrificial Processes
+    - Metasploit
+    - Custom APT command and control malware
 ### **Topics**
+
+**Remote and Enterprise Incident Response**
+
+- Remote Endpoint Access in the Enterprise
+- Remote Endpoint Host-based Analysis
+- Scalable Host-based Analysis (one analyst examining 1,000 systems) and Data Stacking
+- Remote Memory Analysis
+- Velociraptor, F-Response, and KAPE
+
+**Triage and Endpoint Detection and Response (EDR)**
+
+- Endpoint Triage Collection
+- EDR Capabilities and Challenges
+- EDR and Memory Forensics
+
+**Memory Acquisition**
+
+- Acquisition of System Memory
+- Hibernation and Pagefile Memory Extraction and Conversion
+- Virtual Machine Memory Acquisition
+- Memory changes in Windows 10 and 11
+
+**Memory Forensics Analysis Process for Response and Hunting**
+
+- Understanding Common Windows Services and Processes
+- Identify Rogue Processes
+- Analyze Process Objects
+- Review Network Artifacts
+- Look for Evidence of Code Injection
+- Audit Drivers and Rootkit Detection
+- Dump Suspicious Processes and Drivers
+
+**Memory Forensics Examinations**
+
+- Live Memory Forensics
+- Memory Analysis with Volatility
+- Webshell Detection Via Process Tree Analysis
+- Code Injection, Malware, and Rootkit Hunting in Memory
+- Advanced Memory Forensics with MemProcFS
+- WMI and PowerShell Process Anomalies
+- Extract Memory-Resident Adversary Command Lines
+- Investigate Windows Services
+- Hunting Malware Using Comparison Baseline Systems
+- Find and Dump Cached Files from RAM
+
+**Memory Analysis Tools**
+
+- F-Response
+- Velociraptor
+- Volatility
+- MemProcFS
 
 ---
 
@@ -193,9 +273,55 @@ In this section, we cover common attacker tactics and discuss the various data s
 
 **Overview**
 
+I have gained expertise in advanced incident response and hunting techniques through hands-on training with the pioneers of timeline analysis. By utilizing temporal data found in various sources such as filesystems, log files, network data, registry data, and browser history, I am able to quickly and effectively analyze and solve cases. 
+
+Developed by Rob Lee as early as 2001, timeline analysis has become a crucial tool in incident response, hunting, and forensics. With new frameworks and simultaneous examination capabilities, what once took days can now be completed in minutes. 
+
+This training covered the methods for building and analyzing timelines, as well as key analysis techniques to effectively utilize them in cases.
+
 **Hands-on Exercises**
 
-### **Topics**
+- Detecting malware defense evasion techniques
+- Using timeline analysis, track adversary activity by hunting an APT group's footprints of malware, lateral movement, and persistence
+- Target hidden and time-stomped malware and utilities that advanced adversaries use to move in the network and maintain their presence
+- Track advanced adversaries' actions second-by-second through in-depth super-timeline analysis
+- Observe how attackers laterally move to other systems in the enterprise by watching a trail left in filesystem times, registry, event logs, shimcache, and other temporal-based artifacts
+- Identify root cause of an intrusion
+- Learn how to filter system artifact, file system, and registry timelines to target the most important data sources efficiently
+- ### **Topics**
+
+**Malware Defense Evasion and Detection**
+
+- Indicators of Compromise - YARA
+- Entropy and Packing Analysis
+- Executable Anomaly Detection
+- Digital Signature Analysis
+
+**Timeline Analysis Overview**
+
+- Timeline Benefits
+- Prerequisite Knowledge
+- Finding the Pivot Point
+- Timeline Context Clues
+- Timeline Analysis Process
+
+**Filesystem Timeline Creation and Analysis**
+
+- MACB Timestamps
+- Windows Time Rules (File Copy versus File Move)
+- Filesystem Timeline Creation Using Sleuthkit, fls and MFTECmd
+- Bodyfile Analysis and Filtering Using the mactime Tool
+
+**Super Timeline Creation and Analysis**
+
+- Super Timeline Artifact Rules
+- Program Execution, File Knowledge, File Opening, File Deletion
+- Timeline Creation with log2timeline/Plaso
+- log2timeline/ Plaso Components
+- Filtering the Super Timeline Using psort
+- Targeted Super Timeline Creation
+- Super Timeline Analysis Techniques
+- Scaling Super Timeline Analysis with Elastic Search (ELK)
 
 ---
 
@@ -203,16 +329,107 @@ In this section, we cover common attacker tactics and discuss the various data s
 
 **Overview**
 
-**Hands-on Exercises**
+Criminals and ransomware attackers often employ various techniques to conceal their presence on compromised systems, making it difficult for forensic professionals and incident responders to uncover critical evidence. However, by understanding various aspects of the operating system and file system, it is possible to recover files, file fragments, and metadata that can reveal important information such as deleted logs, attacker tools, and exfiltrated data. This can provide a deeper understanding of the attacker's tactics, techniques, and procedures (TTPs) and aid in quickly identifying and mitigating the damage caused by an intrusion. 
 
+In some cases, these deep-dive techniques may be the only way to prove that an attacker was active on a system and determine the root cause of an incident. These methods are not only useful in intrusion cases, but can also be applied in nearly every forensic investigation.
+
+**Hands-on Exercises**
+    
+- Volume shadow snapshot analysis
+- Timelines incorporating volume shadow snapshot data
+- Anti-Forensics analysis using NTFS filesystem components
+- Timestomp identification and suspicious file detections
+- Advanced data recovery with records carving and deleted volume shadow copy recovery
 ### **Topics**
 
+**Volume Shadow Copy Analysis**
+
+- Volume Shadow Copy Service
+- Options for Accessing Historical Data in Volume Snapshots
+- Accessing Shadow Copies with vshadowmount
+- Volume Shadow Copy Timelining
+
+**Advanced NTFS Filesystem Tactics**- 
+- NTFS Filesystem Analysis
+- Master File Table (MFT) Critical Areas
+- NTFS System Files
+- NTFS Metadata Attributes
+- Rules of Windows Timestamps for $StdInfo and $Filename
+- Detecting Timestamp Manipulation
+- Resident versus Nonresident Files
+- Alternate Data Streams
+- NTFS Directory Attributes
+- B-Tree Index Overview and Balancing
+- Finding Wiped/Deleted Files using the $I30 indexes
+- Filesystem Flight Recorders: $Logfile and $UsnJrnl
+- Common Activity Patterns in the Journals
+- Useful Filters and Searches in the Journals
+- What Happens When Data Is Deleted from an NTFS Filesystem?
+
+**Advanced Evidence Recovery**
+
+- Markers of Common Wipers and Privacy Cleaners
+- Deleted Registry Keys
+- Detecting "Fileless" Malware in the Registry
+- File Carving
+- Volume Shadow Carving
+- Carving for NTFS artifacts and Event Log Records
+- Effective String Searching
+- NTFS Configuration Changes to Combat Anti-Forensics
 ---
 
 ## The APT Threat Group Incident Response Challenge
 
 **Overview**
 
-**Hands-on Exercises**
+This exercise immerses participants in a simulated advanced persistent threat (APT) attack, providing a realistic and engaging learning experience. Based on real-world scenarios, it incorporates techniques learned throughout the course and tests participants' newly acquired skills in investigating an enterprise intrusion. 
+
+The exercise covers the entire process of uncovering compromised systems, identifying lateral movement and stolen intellectual property, and is led by instructors with extensive experience in defending against advanced threats from various threat actors.
 
 ### **Topics**
+
+- The Intrusion Forensic Challenge asked each incident response team to analyze multiple systems in an enterprise network with many endpoints.
+
+- Learned to identify and track attacker actions across an entire network finding initial exploitation, reconnaissance, persistence, credential dumping, lateral movement, elevation to domain administrator, and data theft/exfiltration.
+
+- Witnessed and participated in a team-based approach to incident response.
+
+- Discovered evidence of some of the most common and sophisticated attacks in the wild including Cobalt Strike, Metasploit, PowerShell exploit frameworks, and custom nation-state malware.
+
+- During the challenge, each incident response team answered key questions and address critical issues in the different categories listed below, just as they would during a real breach in their organizations:
+
+**IDENTIFICATION AND SCOPING:**
+
+1. How and when was the network breached?
+
+2. List all compromised systems by IP address and specific evidence of compromise.
+
+3. When and how did the attackers first laterally move to each system?
+
+**CONTAINMENT AND THREAT INTELLIGENCE GATHERING:**
+
+4. How and when did the attackers obtain domain administrator credentials?
+
+5. Once on other systems, what did the attackers look for on each system?
+
+6. Find exfiltrated email from executive accounts and perform damage assessment.
+
+7. Determine what was stolen: Recover any attacker archives, find encryption passwords, and extract the contents to verify exfiltrated data.
+
+8. Collect and list all malware used in the attack.
+
+9. Develop and present cyber threat intelligence based on host and network indicators of compromise.
+
+**REMEDIATION AND RECOVERY:**
+
+10. What level of account compromise occurred. Is a full password reset required during remediation?
+
+11. Based on the attacker techniques and tools discovered during the incident, what are the recommended steps to remediate and recover from this incident?
+
+        a. What systems need to be rebuilt?
+
+        b. What IP addresses need to be blocked?
+
+        c. What countermeasures should we deploy to slow or stop these attackers if they come back?
+
+        d. What recommendations would you make to detect these intruders in our network again?
