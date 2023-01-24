@@ -28,11 +28,8 @@ Finally, this section ended with a comprehensive discussion of Microsoft credent
 **Hands-on Exercises**
 
 - Forensic Lab Setup and Orientation Using the SIFT Workstation
-
 - Malware Persistence Detection and Analysis
-
 - Scaling Data Collection and Analysis Across the Enterprises
-
 - Finding and Analyzing Malicious WMI attacks
 ### **Topics**
 
@@ -53,98 +50,63 @@ Finally, this section ended with a comprehensive discussion of Microsoft credent
 **Threat Hunting**
 
 - Hunting versus Reactive Response
-
 - Intelligence-Driven Incident Response
-
 - Building a Continuous Incident Response/Threat Hunting Capability
-
 - Forensic Analysis versus Threat Hunting Across Endpoints
-
 - Threat Hunt Team Roles
-
 - ATT&CK - MITRE's Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK(TM))
 
 **Threat Hunting in the Enterprise**
 
 - Identification of Compromised Systems
-
 - Finding Active and Dormant Malware
-
 - Digitally Signed Malware
-
 - Malware Characteristics
-
 - Common Hiding and Persistence Mechanisms
-
 - Finding Evil by Understanding Normal
 
 **Incident Response and Hunting across Endpoints**
 
 - WMIC & PowerShell
-
 - PowerShell Remoting Scalability
-
 - PowerShell Remoting Credential Safeguards
-
 - Kansa PowerShell Remoting IR Framework
 
 **Malware Defense Evasion and Identification**
 
 - Service Hijacking/Replacement
-
 - Frequent Compilation
-
 - Binary Padding
-
 - Packing/Armoring
-
 - Dormant Malware
-
 - Signing Code with Valid Certificates
-
 - Anti-Forensics/Timestomping
-
 - Living of the Land Binaries and Security Tool Evasion
 
 **Malware Persistence Identification**
 
 - AutoStart Locations, RunKeys
-
 - Service Creation/Replacement
-
 - Service Failure Recovery
-
 - Scheduled Tasks
-
 - DLL Hijacking Attacks
-
 - WMI Event Consumers
 
 **Prevention, detection, and mitigation of Credential Theft**
 
 - Pass the Hash
-
 - Credential Attacks with Mimikatz
-
 - Token Stealing
-
 - Cached Credentials
-
 - LSA Secrets
-
 - Kerberos Attacks
-
 - Golden Tickets
-
 - Kerberoasting
-
 - DCSync
-
 - NTDS.DIT theft
-
 - Bloodhound and Active Directory Graphing
-
 - Common dumping tools including Metasploit, Acehash, Windows Credential Editor, and many others.
+
 ---
 
 ## Intrusion Analysis
