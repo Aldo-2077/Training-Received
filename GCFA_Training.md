@@ -288,7 +288,7 @@ This training covered the methods for building and analyzing timelines, as well 
 - Observe how attackers laterally move to other systems in the enterprise by watching a trail left in filesystem times, registry, event logs, shimcache, and other temporal-based artifacts
 - Identify root cause of an intrusion
 - Learn how to filter system artifact, file system, and registry timelines to target the most important data sources efficiently
-- ### **Topics**
+### **Topics**
 
 **Malware Defense Evasion and Detection**
 
@@ -426,10 +426,10 @@ The exercise covers the entire process of uncovering compromised systems, identi
 
 11. Based on the attacker techniques and tools discovered during the incident, what are the recommended steps to remediate and recover from this incident?
 
-        a. What systems need to be rebuilt?
+    a. What systems need to be rebuilt?
 
-        b. What IP addresses need to be blocked?
+    b. What IP addresses need to be blocked?
 
-        c. What countermeasures should we deploy to slow or stop these attackers if they come back?
+    c. What countermeasures should we deploy to slow or stop these attackers if they come back?
 
-        d. What recommendations would you make to detect these intruders in our network again?
+    d. What recommendations would you make to detect these intruders in our network again?
